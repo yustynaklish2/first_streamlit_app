@@ -25,7 +25,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
-
 #section header to display the repsonse
 streamlit.header("Fruityvice Fruit Advice!")
 
@@ -50,7 +49,9 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains: ")
 streamlit.dataframe(my_data_rows)
 
-
+#allow user to add a fruit to the list
+add_my_fruit = streamlit.text_input("What fruit would you like to add?", "jackfruit"
+streamlit.text("Thanks for adding " + add_my_fruit)
 
 
 
